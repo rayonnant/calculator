@@ -46,6 +46,9 @@ export const Calculator = () => {
             <Badge.Ribbon
               color={'green'}
               text={`= ${calc()}`}
+              style={{
+                cursor: 'default'
+              }}
             >
               <Card
                 title="Калькулятор"
