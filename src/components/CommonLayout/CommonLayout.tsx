@@ -7,11 +7,18 @@ export const CommonLayout: FC<PropsWithChildren> = ({
   children
 }) => {
   return (
-    <Layout>
+    <Layout style={{
+        height: '100vh',
+        display: 'flex'
+    }}>
       <Layout.Header>
         <Avatar shape="square" size={'small'} icon={<UserOutlined />} />
       </Layout.Header>
-      <Layout.Content>
+      <Layout.Content style={{
+          alignContent: 'center',
+          marginRight: '15px',
+          marginLeft: '15px'
+      }}>
         {children}
       </Layout.Content>
       <Layout.Footer> </Layout.Footer>
